@@ -1,0 +1,68 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "eslint:recommended",
+        "airbnb"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "import",
+        "prettier"
+    ],
+    "rules": {
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ],
+        "react/prop-types": 0,
+        "no-underscore-dangle": 0,
+        "import/imports-first": [
+            "error",
+            "absolute-first"
+        ],
+        "import/newline-after-import": 2,
+        "import/prefer-default-export": 0,
+        "no-shadow": 0,
+        "react/jsx-props-no-spreading": 0,
+        "react/no-array-index-key": 0,
+        "jsx-a11y/control-has-associated-label": 0,
+        "code": 0,
+        "max-len": 0,
+        "object-curly-newline": 0
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".jsx"],
+                "paths": ["./src"],
+                "alias": {
+                    "assets": "./src/assets",
+                    "components": "./src/components",
+                    "containers": "./src/containers",
+                    "hooks": "./src/hooks",
+                    "routes": ".src/routes",
+                    "context": "./src/context",
+                    "styles": "./src/styles",
+                    "utils": "./src/utils"
+                }
+            }
+        }
+    }
+}
