@@ -1,0 +1,25 @@
+{
+    "presets": [
+        "@babel/preset-env",
+        "@babel/preset-react"
+    ],
+    "plugins": [
+        [
+            "module-resolver",
+            {
+                "root": ["./src"],
+                "extensions": [".js", ".jsx"],
+                "alias": {
+                    "assets": "./src/assets",
+                    "components": "./src/components",
+                    "containers": "./src/containers",
+                    "hooks": "./src/hooks",
+                    "routes": ".src/routes",
+                    "context": "./src/context",
+                    "styles": "./src/styles",
+                    "utils": "./src/utils"
+                }
+            }
+        ]
+    ]
+}
